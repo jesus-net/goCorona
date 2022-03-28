@@ -1,0 +1,91 @@
+@import 'fonts.scss';
+
+*,
+*::before,
+::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+
+body {
+    font-family: RubikRegular;
+    font-size: 12px;
+    line-height: 138.5%;
+    color: #616161;
+}
+
+.title, .sub-title {
+    font-family: RubikBold;
+    font-size: 44px;
+    line-height: 55px;
+    color: #000000;
+}
+.text {
+    max-width: 242px;
+    margin: 14px 0px 0px 0px;
+    &--center {
+        max-width: 590px;
+        margin: 14px auto 46px;
+    }
+}
+.text:not(:last-child) {
+    max-width: 363px;
+    margin: 12px 0px 24px 0px;
+    
+}
+
+.mark-blue {
+    background: inherit;
+    color: #4285F4;
+}
+
+.mark-red {
+    background: inherit;
+    color: #EC5863;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+[class*="__container"] {
+    max-width: 1087px;
+    padding: 0px 15px;
+    margin: 0 auto;
+}
